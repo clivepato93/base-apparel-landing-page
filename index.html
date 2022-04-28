@@ -13,21 +13,34 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <script src="script.js"></script>
+  <script src="script.js" async></script>
 </head>
 <body>
   <div class="container">
     <section class="info">
-      <img src="images/logo.svg" alt="">
-    We're coming soon
+      <img src="images/logo.svg" alt="" class="logo">
+
+      <div class="imgContainer">
+        <img src="images/hero-mobile.jpg" alt="" class="heroMobile">
+      </div>
+    <h1>  We're <span>coming</span><span>soon</span></h1>
     
+    <p class="text">
     Hello fellow shoppers! We're currently building our new fashion store. 
     Add your email below to stay up-to-date with announcements and our launch deals.
-    
-    Email Address
+    </p>
+
+    <!-- form element -->
+    <div class="form">
+      <input type="text" name="email" id="inputBox" placeholder="Email Address">
+      <!-- <input type="submit" value=""> -->
+      <button type="submit" class="btn">
+        <img src="images/icon-arrow.svg" alt="" class="arrow">
+      </button>
+    </div>
     </section>
     <!-- <div class="imgContainer"> -->
-      <img src="images/hero-desktop.jpg" alt="" class="img">
+      <img src="images/hero-desktop.jpg" alt="" class="heroDesktop">
     <!-- </div> -->
   </div>
   <footer>
