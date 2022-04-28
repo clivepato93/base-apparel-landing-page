@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.hidden{
+    display: none;
+}
+
 :root{
     --desaturated-Red: hsl(0, 36%, 70%);
     --soft-red: hsl(0, 93%, 68%);
@@ -29,7 +33,6 @@ img{
 }
 
 .container{
-
     font-family: 'Josefin Sans',sans-serif;
     font-weight: 300;
     display: flex;
@@ -40,6 +43,8 @@ img{
 
 
 .info{
+    width:100%;
+    margin-left: 6em;
     padding: 2.6em;
     display: flex;
     flex-direction: column;
@@ -81,7 +86,9 @@ span{
 
 .text{
     margin-bottom: 2em;
-    line-height: 1.2;
+    line-height: 2;
+
+    width:25em;
 }
 
 .form{
@@ -124,11 +131,24 @@ button{
     height: 1.6em;
 }
 
+.warning{
+    align-self: flex-start;
+    width: 92%;
+    margin-left: 2em;
+    margin-top: 1em;
+    color:var(--soft-red);
+    /* position: absolute; */
+    /* transform: translate(1em,5em); */
+}
+
+footer{
+    margin-top: 2em;
+}
+
 @media screen and (max-width:1000px){
     body{
         background-image: none;
         background-color: white;
-        /* overflow: hidden; */
     }
 
 
@@ -136,10 +156,11 @@ button{
         align-self: flex-start;
         padding: 1.6em;
         width: 9em;
-        position: relative;
     }
 
     .info{
+        margin-left: 0;
+        width: 100%;
         padding: 0;
         align-items: center;
     }
@@ -153,7 +174,6 @@ button{
     
     .heroMobile{
         display: block;
-        /* width: 110%; */
     }
 
     .heroDesktop{
@@ -161,7 +181,7 @@ button{
     }
 
     h1{
-        margin-top: 2em;
+        margin-top: 1.5em;
         margin-bottom: 1em;
         text-align: center;
         font-size: 2em;
