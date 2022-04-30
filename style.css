@@ -211,6 +211,12 @@ footer{
         background-color: white;
     }
 
+    .logoContainer{
+        align-self: flex-start;
+        /* padding: 1.6em; */
+        /* width: 9em; */
+    }
+
 
     .logo{
         align-self: flex-start;
