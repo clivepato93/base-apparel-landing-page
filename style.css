@@ -149,7 +149,7 @@ input::placeholder{
 .error{
 
     position: absolute;
-    left: -4em;
+    left: 14em;
     top: 1.35em;
 }
 
